@@ -20,12 +20,12 @@ public class Comp {
 		}
 		case 3:
 		{
-			return new PriceGTComparator();
+			return new PriceLTComparator();
 		}
 			
 		default:
 		{
-			return new PriceLTComparator();
+			return new PriceGTComparator();
 		}
 		}
 		
