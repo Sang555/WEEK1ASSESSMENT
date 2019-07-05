@@ -66,7 +66,7 @@ public class Dish implements Comparable<Dish>{
 	 @Override
 	public int hashCode() {
 		// TODO Auto-generated method stub
-		return Objects.hash(this.dishId,this.name,this.dishId);
+		return Objects.hash(this.dishId,this.name);
 	}
 
 	@Override
