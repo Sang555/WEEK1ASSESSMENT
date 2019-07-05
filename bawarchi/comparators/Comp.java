@@ -12,20 +12,20 @@ public class Comp {
 		{
 		case 1:
 		{
-			return new Comparators.SortByCaloriesAsc();
+			return new CaloriesGTComparators();
 		}
 		case 2:
 		{
-			return new Comparators.SortByPriceDesc();
+			return new CaloriesLTComparator();
 		}
 		case 3:
 		{
-			return new Comparators.SortByPriceAsc();
+			return new PriceGTComparator();
 		}
 			
 		default:
 		{
-			return new Comparators.SortByPriceDesc();
+			return new PriceLTComparator();
 		}
 		}
 		
