@@ -15,12 +15,12 @@ public class Restaurant {
 	public static void main(String[] args)
 	{
 	Scanner scanner=new Scanner(System.in);
-	Set<Dish> dishes= new TreeSet<>();
-	dishes.add(new Dish(5, "Neer Dosa", 50, 100));
-	dishes.add(new Dish(2, "Idli Vada", 40, 200));
-	dishes.add(new Dish(4, "Roti Curry", 100, 250));
-	dishes.add(new Dish(1, "Dosa", 50, 300));
-	dishes.add(new Dish(3, "Pulav", 80, 350));
+	List<Dish> dishList= new ArrayList<>();
+	dishList.add(new Dish(5, "Neer Dosa", 50, 100));
+	dishList.add(new Dish(2, "Idli Vada", 40, 200));
+	dishList.add(new Dish(4, "Roti Curry", 100, 250));
+	dishList.add(new Dish(1, "Dosa", 50, 300));
+	dishList.add(new Dish(3, "Pulav", 80, 350));
 	
 	System.out.println("==========WELCOME===========");
 	System.out.println("Please choose from the below options: ");
@@ -33,7 +33,7 @@ public class Restaurant {
 	int choice;
 	choice=scanner.nextInt();
 	scanner.nextLine();
-	List<Dish> dishList =new ArrayList<>(dishes);
+	
 	Collections.sort(dishList, Comp.getComparators(choice));
 	//System.out.println(dishList);
 	System.out.println("=================Please select the Dish Id and hit enter===============================");
