@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Hey'
-              
+                bat 'echo %PATH%'
             }
         }
     }
